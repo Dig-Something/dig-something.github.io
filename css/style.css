@@ -235,6 +235,8 @@ header .line {
   content: "";
   display: block;
   height: 2px;
+	
+  transform-origin: center;
 
   transition: 0.5s;
   -moz-transition: 0.5s;
