@@ -41,7 +41,7 @@ function onClickDotListEls(idx, e) { // addEvent()에서 bind로 부여된 순�
 
 // 스크롤 시 해당 섹션으로 자동 스크롤되는 함수
 function onScrollWindow(e) {
-    if(e.wheelDeltaY < -170) { // 아래로 스크롤 했을 때
+    if(e.wheelDeltaY < -120) { // 아래로 스크롤 했을 때
         sectionTop = window.innerHeight * (cuId + 1); // 현재 순서의 다음 순서(+1) 위치 값을 sectionTop에 저장
         cuId = cuId + 1; // 현재 순서의 다음 순서(+1)를 cuId에 저장
 
@@ -55,7 +55,7 @@ function onScrollWindow(e) {
         }
     }
 
-    if(e.wheelDeltaY > 170) { // 위로 스크롤 했을 때
+    if(e.wheelDeltaY > 120) { // 위로 스크롤 했을 때
         sectionTop = window.innerHeight * (cuId - 1); // 현재 순서의 이전 순서(-1) 위치값을 sectionTop에 저장
         cuId = cuId - 1; // 현재 순서의 이전 순서(-1)를 cuId에 저장
 
